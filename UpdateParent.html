@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://localhost/BED/UpdateParent.php" method="post">
+        parent_name <input type="text" name="parent_name"> <br> parent_address <input type="text" name="parent_address"> <br> parent_email <input type="text" name="parent_email"> <br> parent_phone <input type="text" name="parent_phone"> <br> stu_name
+        <input type="text" name="stu_name"> <br> <br>
+
+
+        <p>choose the function</p> <br>
+        <input type="radio" name="opt" value="_ADD"> ADD <br>
+        <input type="radio" name="opt" value="_UPDATE"> UPDATE
+        <select name="sel">
+            <option value="parent_address">parent_address</option>
+            <option value="parent_email">parent_email</option>
+            <option value="parent_phone">parent_phone</option>
+            <option value="stu_name">stu_name</option>
+        </select> <br>
+        <input type="radio" name="opt" value="_DELETE"> DELETE <br>
+
+        <input type="submit" name="submit" value="submit">
+
+
+    </form>
+</body>
+
+</html>

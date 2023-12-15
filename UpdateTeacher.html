@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://localhost/BED/UpdateTeacher.php" method="post">
+        teacher_name <input type="text" name="teacher_name"> <br> class_id <input type="text" name="class_id"> <br> teacher_phone <input type="text" name="teacher_phone"> <br> teacher_address <input type="text" name="teacher_address"> <br> background_check
+        <input type="text" name="background_check"> <br> email <input type="text" name="email"> <br> <br>
+
+
+        <p>choose the function</p> <br>
+        <input type="radio" name="opt" value="_ADD"> ADD <br>
+        <input type="radio" name="opt" value="_UPDATE"> UPDATE
+        <select name="sel">
+            <option value="class_id">class_id</option>
+            <option value="teacher_phone">teacher_phone</option>
+            <option value="teacher_address">teacher_address</option>
+            <option value="background_check">background_check</option>
+            <option value="email">email</option>
+        </select> <br>
+        <input type="radio" name="opt" value="_DELETE"> DELETE <br>
+
+        <input type="submit" name="submit" value="submit">
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://localhost/BED/UpdateStudent.php" method="post">
+        stu_name <input type="text" name="stu_name"> <br> stu_id <input type="text" name="stu_id"> <br> stu_ADDR <input type="text" name="stu_address"> <br> stu_mediInfo <input type="text" name="stu_mediInfo"> <br> class_id <input type="text" name="class_id">        <br> parent1 <input type="text" name="parent1"> <br> parent2 <input type="text" name="parent2"> <br> <br>
+
+
+        <p>choose the function</p> <br>
+        <input type="radio" name="opt" value="_ADD"> ADD <br>
+        <!--users will choose what function they want here-->
+
+        <input type="radio" name="opt" value="_UPDATE"> UPDATE
+
+        <select name="sel">                 <!--If user select Update, they need to clarify which field they want to change-->
+            <option value="stu_id">stu_id</option>
+            <option value="stu_ADDR">stu_address</option>
+            <option value="stu_mediInfo">stu_mediInfo</option>
+            <option value="class_id">class_id</option>
+            <option value="parent1">parent1</option>
+            <option value="parent2">parent2</option>
+        </select> <br>
+        <input type="radio" name="opt" value="_DELETE"> DELETE <br>
+
+        <input type="submit" name="submit" value="submit">
+
+
+    </form>
+</body>
+
+</html>
